@@ -1,53 +1,99 @@
-<!DOCTYPE html><!-- declaração do tipo de documento -->
-<html lang="pt-br"><!-- início do documento HTML -->
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tabela de cidade</title><!-- título da página exibido na aba do navegador -->
-  <link rel="stylesheet" href="style.css"> <!-- é utilizado para importar uma folha de estilo externa no documento HTML-->
+  <title>Tabela Estados</title>
 </head>
-<body><!-- corpo do documento -->
-  <div class="table"><!--define uma seção do HTML que será estilizada com as regras CSS especificadas para a classe "".-->
-  <table border='1'> <!-- cria uma tabela com borda de 1px -->
-    <thead> <!-- cabeçalho da tabela -->
-      <tr> <!-- linha da tabela -->
-        <th>Cidade</th> <!-- célula do cabeçalho da tabela -->
-        <th>evento</th> <!-- célula do cabeçalho da tabela -->
-        <th>Data do evento</th> <!-- célula do cabeçalho da tabela -->
-        <th>Ponto Turístico</th> <!-- célula do cabeçalho da tabela -->
-      </tr> <!-- fim da linha da tabela -->
-    </thead> <!-- fim do cabeçalho da tabela -->
-    <tbody> <!-- corpo da tabela -->
-      <tr> <!-- linha da tabela -->
-        <td>Rio de Janeiro</td> <!-- célula da tabela com o nome da cidade -->
-        <td>rock in rio</td> <!-- célula da tabela com o nome do evento -->
-        <th><input id="date" type="date"></th> <!-- célula da tabela com um campo para inserir a data do evento -->
-        <td>Cristo Redentor</td> <!-- célula da tabela com o nome do ponto turístico -->
-      </tr> <!-- fim da linha da tabela -->
-      <tr> <!-- linha da tabela -->
-        <td>Anápolis</td> <!-- célula da tabela com o nome da cidade -->
-        <td>Show</td> <!-- célula da tabela com o nome do evento -->
-        <th><input id="date" type="date"></th> <!-- célula da tabela com um campo para inserir a data do evento -->
-        <td>Pecuária</td> <!-- célula da tabela com o nome do ponto turístico -->
-      </tr> <!-- fim da linha da tabela -->
-      <tr> <!-- linha da tabela -->
-        <td>Goiânia</td> <!-- célula da tabela com o nome da cidade -->
-        <td>buteco gusttavo lima</td> <!-- célula da tabela com o nome do evento -->
-        <th><input id="date" type="date"></th> <!-- célula da tabela com um campo para inserir a data do evento -->
-        <td>Estádio Serra Dourada</td> <!-- célula da tabela com o nome do ponto turístico -->
-      </tr> <!-- fim da linha da tabela -->
-      <tr> <!-- linha da tabela -->
-        <td>São Paulo</td> <!-- célula da tabela com o nome da cidade -->
-        <td>Coldplay</td> <!-- célula da tabela com o nome do evento -->
-        <th><input id="date" type="date"></th> <!-- célula da tabela com um campo para inserir a data do evento -->
-        <td>By Koji</td> <!-- célula da tabela com o nome do ponto turístico -->
-      </tr> <!-- fim da linha da tabela -->
-    </tbody> <!-- fim do corpo da tabela -->
-    <tfoot> <!-- rodapé da tabela -->
-      <tr> <!-- linha da tabela -->
-        <td colspan="3">Total de Cidades: 4</td> <!-- célula da tabela com o número total de cidades -->
-      </tr> 
-    </div>
+<body>
+  <h1>Tabela Estados</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>id_estado</th>
+        <th>nome_estado</th>
+        <th>uf_estado</th>
+        <th>regiao_estado</th>
+        <th>populacao_estado</th>
+        <th>area_estado</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>São Paulo</td>
+        <td>SP</td>
+        <td>Sudeste</td>
+        <td>46289333</td>
+        <td>248222.80</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Minas Gerais</td>
+        <td>MG</td>
+        <td>Sudeste</td>
+        <td>21292666</td>
+        <td>586528.30</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Rio de Janeiro</td>
+        <td>RJ</td>
+        <td>Sudeste</td>
+        <td>17366189</td>
+        <td>43780.17</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Bahia</td>
+        <td>BA</td>
+        <td>Nordeste</td>
+        <td>14930634</td>
+        <td>564733.17</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Paraná</td>
+        <td>PR</td>
+        <td>Sul</td>
+        <td>11516840</td>
+        <td>199307.93</td>
+      </tr>
+    </tbody>
+  </table>
 </body>
-</html><!-- final  do documento HTML -->
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tabela Cidades</title>
+</head>
+<body>
+  <h1>Tabela Cidades</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>id_cidade</th>
+        <th>nome_cidade</th>
+        <th>estado_id</th>
+        <th>populacao_cidade</th>
+        <th>data_fundacao</th>
+        <th>PIB</th>
+        <th>area_cidade</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>São Paulo</td>
+        <td>1</td>
+        <td>12345678</td>
+        <td>01/01/1554</td>
+        <td>1234567.89</td>
+        <td>1521.11</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Belo Horizonte</td>
+        <td>2</td>
+        <td>567890
