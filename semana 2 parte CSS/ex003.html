@@ -1,99 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Tabela Estados</title>
-</head>
-<body>
-  <h1>Tabela Estados</h1>
-  <table>
-    <thead>
-      <tr>
-        <th>id_estado</th>
-        <th>nome_estado</th>
-        <th>uf_estado</th>
-        <th>regiao_estado</th>
-        <th>populacao_estado</th>
-        <th>area_estado</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>1</td>
-        <td>São Paulo</td>
-        <td>SP</td>
-        <td>Sudeste</td>
-        <td>46289333</td>
-        <td>248222.80</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>Minas Gerais</td>
-        <td>MG</td>
-        <td>Sudeste</td>
-        <td>21292666</td>
-        <td>586528.30</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>Rio de Janeiro</td>
-        <td>RJ</td>
-        <td>Sudeste</td>
-        <td>17366189</td>
-        <td>43780.17</td>
-      </tr>
-      <tr>
-        <td>4</td>
-        <td>Bahia</td>
-        <td>BA</td>
-        <td>Nordeste</td>
-        <td>14930634</td>
-        <td>564733.17</td>
-      </tr>
-      <tr>
-        <td>5</td>
-        <td>Paraná</td>
-        <td>PR</td>
-        <td>Sul</td>
-        <td>11516840</td>
-        <td>199307.93</td>
-      </tr>
-    </tbody>
-  </table>
-</body>
+<html>
+  <head>
+    <title>Tabela Cidades</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <table border='1' class="tabela1"> <!--Define uma tabela HTML-->
+      <thead> <!--Define uma seção de cabeçalho da tabela-->
+        <tr> <!--Define uma linha da tabela-->
+          <th>Estado</th> <!--Define uma célula de cabeçalho da tabela-->
+          <th>Capital</th>
+          <th>População</th>
+        </tr>
+      </thead>
+      <tbody> <!--Define uma seção de corpo da tabela-->
+        <tr>
+          <td>Acre</td> <!--Define uma célula da tabela-->
+          <td>Rio Branco</td>
+          <td>894,470</td>
+        </tr>
+        <tr>
+          <td>Alagoas</td>
+          <td>Maceió</td>
+          <td>3,337,357</td>
+        </tr>
+        <tr>
+          <td>Bahia</td>
+          <td>Salvador</td>
+          <td>14,930,634</td>
+        </tr>
+        <tr>
+          <td>Distrito Federal</td>
+          <td>34</td>
+          <td>Ficar forte ao comer espinafre</td>
+        </tr>
+      </tbody>
+      <tfoot> <!--Define uma seção de rodapé da tabela-->
+        <tr>
+          <td colspan="3">Total de pessoas: 4</td>
+        </tr>
+      </tfoot>
+    </table>
+    <table border='2'> <!--Define uma tabela HTML-->
+      <thead> <!--Define uma seção de cabeçalho da tabela-->
+        <tr> <!--Define uma linha da tabela-->
+          <th>Desenho</th> <!--Define uma célula de cabeçalho da tabela-->
+          <th>Ano</th>
+          <th>Gênero</th>
+        </tr>
+      </thead>
+      <tbody> <!--Define uma seção de corpo da tabela-->
+        <tr>
+          <td>Simpsons</td> <!--Define uma célula da tabela-->
+          <td>1989</td>
+          <td>Comédia de animação</td>
+        </tr>
+        <tr>
+          <td>Avatar</td>
+          <td>2005</td>
+          <td>Fantasia de animação</td>
+        </tr>
+        <tr>
+          <td>My Hero Academia </td>
+          <td>2016</td>
+          <td>Ação de animação</td>
+        </tr>
+        <tr>
+          <td>Hora de Aventura</td>
+          <td>2010</td>
+          <td>Fantasia de animação</td>
+        </tr>
+      </tbody>
+      <tfoot> <!--Define uma seção de rodapé da tabela-->
+        <tr>
+          <td colspan="3">Total de Desenhos: 4</td>
+        </tr>
+      </tfoot>
+    </table>
+    <table border='3'> <!--Define uma tabela HTML-->
+      <thead> <!--Define uma seção de cabeçalho da tabela-->
+        <tr> <!--Define uma linha da tabela-->
+          <th>Criadores do desenho</th> <!--Define uma célula de cabeçalho da tabela-->
+          <th>Dubladores</th>
+          <th>Desenho da Dublagem</th>
+        </tr>
+      </thead>
+      <tbody> <!--Define uma seção de corpo da tabela-->
+        <tr>
+          <td>William Hanna</td> <!--Define uma célula da tabela-->
+          <td>Carlos Seidl</td>
+          <td>Zé Colmeia</td>
+        </tr>
+        <tr>
+          <td>Chris Buck e Jennifer Lee</td>
+          <td>Fábio Porchat </td>
+          <td>Olaf (Frozen)</td>
+        </tr>
+        <tr>
+          <td>Pete Docter</td>
+          <td>Amy Poehler</td>
+          <td>Divertida Mente</td>
+        </tr>
+        <tr>
+          <td>Glen Murakami</td>
+          <td>Tara Strong</td>
+          <td>Os Jovens Titãs</td>
+        </tr>
+      </tbody>
+      <tfoot> <!--Define uma seção de rodapé da tabela-->
+        <tr>
+          <td colspan="3">Total de dubladores: 4</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
 </html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Tabela Cidades</title>
-</head>
-<body>
-  <h1>Tabela Cidades</h1>
-  <table>
-    <thead>
-      <tr>
-        <th>id_cidade</th>
-        <th>nome_cidade</th>
-        <th>estado_id</th>
-        <th>populacao_cidade</th>
-        <th>data_fundacao</th>
-        <th>PIB</th>
-        <th>area_cidade</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>1</td>
-        <td>São Paulo</td>
-        <td>1</td>
-        <td>12345678</td>
-        <td>01/01/1554</td>
-        <td>1234567.89</td>
-        <td>1521.11</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>Belo Horizonte</td>
-        <td>2</td>
-        <td>567890
