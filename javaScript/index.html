@@ -1,62 +1,26 @@
-<!-- index.html -->
-<section class="memory-game">
-    <div class="memory-card">
-      <img class="front-face" src="img/react.svg" alt="Face da Carta">
-      <img class="back-face" src="img/js-badge.svg" alt="Verso da Carta">
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jogo da Memória - Cidade</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="game-info">
+        <p>Pontuação: <span id="score">0</span></p>
+        <p>Tempo restante: <span id="timer">60</span> segundos</p>
     </div>
-  
-    <div class="memory-card">
-      <img class="front-face" src="img/react.svg" alt="Face da Carta">
-      <img class="back-face" src="img/js-badge.svg" alt="Verso da Carta">
+    <div class="game-board">
+        <div class="card">
+            <div class="card-back"></div>
+            <div class="card-front" style="background-image: url('images/amsterdam.jpg')"></div>
+        </div>
+        <div class="card">
+            <div class="card-back"></div>
+            <div class="card-front" style="background-image: url('images/barcelona.jpg')"></div>
+        </div>
+        <!-- Resto das cartas aqui -->
     </div>
-  
-    <div class="memory-card">
-      <img class="front-face" src="img/angular.svg" alt="Face da Carta">
-      <img class="back-face" src="img/js-badge.svg" alt="Verso da Carta">
-    </div>
-  
-    <div class="memory-card">
-      <img class="front-face" src="img/angular.svg" alt="Face da Carta">
-      <img class="back-face" src="img/js-badge.svg" alt="Verso da Carta">
-    </div>
-  
-    <div class="memory-card">
-      <img class="front-face" src="img/ember.svg" alt="Face da Carta">
-      <img class="back-face" src="img/js-badge.svg" alt="Verso da Carta">
-    </div>
-  
-    <div class="memory-card">
-      <img class="front-face" src="img/ember.svg" alt="Face da Carta">
-      <img class="back-face" src="img/js-badge.svg" alt="Verso da Carta">
-    </div>
-  
-    <div class="memory-card">
-      <img class="front-face" src="img/vue.svg" alt="Face da Carta">
-      <img class="back-face" src="img/js-badge.svg" alt="Verso da Carta">
-    </div>
-  
-    <div class="memory-card">
-      <img class="front-face" src="img/vue.svg" alt="Face da Carta">
-      <img class="back-face" src="img/js-badge.svg" alt="Verso da Carta">
-    </div>
-  
-    <div class="memory-card">
-      <img class="front-face" src="img/backbone.svg" Face da Carta="Backbone">
-      <img class="back-face" src="img/js-badge.svg" alt="Verso da Carta">
-    </div>
-  
-    <div class="memory-card">
-      <img class="front-face" src="img/backbone.svg" Face da Carta="Backbone">
-      <img class="back-face" src="img/js-badge.svg" alt="Verso da Carta">
-    </div>
-  
-    <div class="memory-card">
-      <img class="front-face" src="img/aurelia.svg" alt="Face da Carta">
-      <img class="back-face" src="img/js-badge.svg" alt="Verso da Carta">
-    </div>
-  
-    <div class="memory-card">
-      <img class="front-face" src="img/aurelia.svg" alt="Face da Carta">
-      <img class="back-face" src="img/js-badge.svg" alt="Verso da Carta">
-    </div>
-  </section>
+    <button id="start-button">Iniciar jogo</button>
+    <script src="script.js"></script>
+</body>
+</html>
