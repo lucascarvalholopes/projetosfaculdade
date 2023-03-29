@@ -1,0 +1,40 @@
+/* A classe ".card" é usada para definir o estilo geral das cartas, incluindo a altura, a cor de fundo, a borda, o raio da borda e o cursor do mouse. */
+.card {
+    height: 200px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+/* A classe ".card .card-img-top" é usada para estilizar a imagem na frente da carta, que é posicionada absolutamente em relação à carta e ajustada para preencher todo o espaço disponível. O object-fit: contain é usado para garantir que a imagem seja redimensionada para caber dentro da área disponível, mantendo a proporção. */
+.card .card-img-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+/* A classe ".card .back" é usada para estilizar o verso da carta. É posicionado absolutamente em relação à carta e estilizado com uma cor de fundo azul. */
+.card .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: blue;
+}
+
+/* A classe ".selected" é adicionada a uma carta quando é clicada pelo usuário e estilizada com uma borda verde para indicar que está selecionada. */
+.selected {
+    border-color: green;
+}
+
+/* A classe ".disabled" é adicionada a uma carta quando é encontrada uma correspondência e desativada para que não possa ser clicada novamente. É estilizada com uma opacidade reduzida e um cursor "not-allowed" para indicar que está desativada. */
+.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
