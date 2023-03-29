@@ -1,0 +1,60 @@
+/*
+    Curso de Engenharia de Software - UniEVANGÉLICA 
+    Disciplina de Programação Web
+    Projeto: Acadium 
+    Devs:   Bruno Paiva - 2111579
+            Gustavo Morais - 2111296
+            João Pedro Braga Gomes- 2110157
+            Luana Teixeira de Moraes - 2110867
+            Lucas de Carvalho - 2110160
+            Vanessa Nassar aji-2311987 
+    26/03/2023 
+*/
+*{
+    padding: 0;
+    margin: 0;
+    --color-background: #F2F2F2;
+    --color-background2: #fcfcfc;
+    --color-primary: #15183a;
+    --color-secundary: #2e3178;
+    --color-tertiary: #474bb6;
+    --color-fourth: #6065f4;
+    font-family: 'Comfortaa', cursive;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-tertiary);
+}
+a:hover{
+    color: var(--color-fourth);
+}
+
+.button{
+    background-color: var(--color-secundary);
+    color: var(--color-background2);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button:hover{
+    transition: 0.5s;
+    background-color: var(--color-tertiary);
+    color: var(--color-background2);
+}
+
+.title{
+    font-weight: bold;
+    font-size: x-large;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form div{
+    display: flex;
+    flex-direction: column
+}
