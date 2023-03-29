@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Medicamentos</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">UniSoft</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="cadpaciente.html">Cadastro Paciente<span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="agendamento.html">Agendamento<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="consultas.html">Consultas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="consultaslist.html">Consultas marcadas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="medicamentos.html">Medicamentos</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <h2>Lista de Medicamentos</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <form id="add-medicamento-form">
+                    <div class="form-group">
+                        <label for="nome-medicamento">Nome do Medicamento:</label>
+                        <input type="text" class="form-control" id="nome-medicamento" name="nome-medicamento">
+                    </div>
+                    <div class="form-group">
+                        <label for="quantidade-medicamento">Quantidade:</label>
+                        <input type="number" class="form-control" id="quantidade-medicamento"
+                            name="quantidade-medicamento">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Adicionar</button>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <ul id="medicamentos-list" class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Paracetamol
+                        <span class="badge badge-primary badge-pill">1</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Dipirona
+                        <span class="badge badge-primary badge-pill">9</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Aspirina
+                        <span class="badge badge-primary badge-pill">3</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var counter = 1;
+
+            $("#add-medicamento-form button[type='submit']").click(function (event) {
+                event.preventDefault();
+                var newMed = $("#nome-medicamento").val().trim();
+                var newQuant = $("#quantidade-medicamento").val().trim();
+                if (newMed !== '' && newQuant !== '') {
+                    var newRow = $("<li>");
+                    newRow.addClass("list-group-item d-flex justify-content-between align-items-center");
+                    newRow.append(newMed);
+                    newRow.append('<span class="badge badge-primary badge-pill">' + newQuant + '</span>');
+                    newRow.append('<button type="button" class="btn btn-danger btn-sm delete-btn">Remover</button>');
+                    $("#medicamentos-list").append(newRow);
+                    $("#nome-medicamento").val('');
+                    $("#quantidade-medicamento").val('');
+                    counter++;
+                }
+            });
+
+            $("#medicamentos-list").on("click", ".delete-btn", function () {
+                $(this).closest("li").remove();
+                counter -= 1;
+            });
+        });
+
+    </script>
+
+</body>
