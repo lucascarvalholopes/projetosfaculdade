@@ -1,3 +1,8 @@
+
+//Curso de Engenharia de Software - UniEVANGÉLICA 
+//Disciplina de Programação Web 
+//Dev: Lucas de carvalho Lopes
+//DATA:30/03/2023
 // O jogo é iniciado quando o documento é carregado no navegador, através da função $(document).ready().
 $(document).ready(function () {
     // O jogo consiste em um número fixo de pares de cartas (8, no caso), cada par contendo duas cartas idênticas. Os pares de cartas são gerados aleatoriamente e distribuídos na tela.
