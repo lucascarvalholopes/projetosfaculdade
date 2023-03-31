@@ -190,3 +190,33 @@ table:nth-of-type(3) th {
 table:nth-of-type(3) td {
   background-color: #fff;
 }
+/* EX005*/
+/* Definir o estilo para o cabeçalho H1 */
+.ex005 {
+  font-size: 24px;
+  color: blue;
+}
+
+/* Definir o estilo para o rótulo e a seleção */
+label, select {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Definir o estilo para a tabela */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+table th, table td {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+table th {
+  background-color: #ddd;
+  font-weight: bold;
+}
+

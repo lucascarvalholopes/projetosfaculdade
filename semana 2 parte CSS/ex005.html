@@ -4,23 +4,65 @@ Disciplina de Programação Web
 Dev: Lucas de carvalho Lopes
 DATA: 24/03/2023
  -->
-<!-- declaração do tipo de documento -->
-<html><!-- início do documento HTML -->
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	
-	<title>Cidades: Descobrindo o melhor de cada lugar </title><!-- título da página exibido na aba do navegador -->
-	<link rel="stylesheet" type="text/css" href="style.css" /><!-- é utilizado para importar uma folha de estilo externa no documento HTML-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"><!--Esse código é um link para uma folha de estilo (CSS) 
+		hospedada no site do Bootstrap, uma popular biblioteca de componentes de interface do usuário.-->
 </head>
-<body><!-- corpo do documento -->
-	<div class="codigo2"><!--define uma seção do HTML que será estilizada com as regras CSS especificadas para a classe "".-->
+<div class="ex005">
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="#">home</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav">
+				<li class="nav-item active">
+					<a class="nav-link" href="/semana 1/ex001/index.html">link</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/semana 1/ex002/index.html">Formulario</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/semana 1/ex003/index.html">Tabelas</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/semana 1/ex004/index.html">Imagem</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+    <h3>Tabela Estados</h3> <!---tag HTML que cria um cabeçalho de terceiro nível (h3) -->
+    <table border='1'>
+        <thead>
+          <tr>
+            <th>Estados</th>
+            <th>Ponto Turístico</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Acre</td>
+            <td>Parque Nacional da serra Do Divisor</td>
+          </tr>
+		  <td>Alagoas</td>
+            <td>Praia do Francês</td>
+		</tr>	
+        </table>
 	<H1>Cidade do Evento e Pontos Turístico</H1><!--cria um cabeçalho de nível 1 para uma página da web, onde "Cidade do Evento e Pontos Turísticos" é o texto do cabeçalho.-->
 	<label for="Cidade">Cidade:</label><!--cria uma etiqueta ou rótulo (label) associado a um elemento de entrada de dados em um formulário HTML.-->
 	<select id="estado" name="estado"><!--cria um elemento de seleção (dropdown) em um formulário HTML.-->
-		<!--O código apresentado é um exemplo de como criar uma lista suspensa (dropdown) em uma página HTML. 
-			Cada linha contém uma tag "<option>" que representa uma opção dentro da lista suspensa.-->
-		<option value="Anápolis">Acre</option>
-		<option value="Goiânia">Alagoas</option>
-		<option value="São Paulo">Distrito Federal</option>
+		
+		<option value="Acre">Acre</option>
+		<option value="Alagoas">Alagoas</option>
+		<option value="Distrito Federal">Distrito Federal</option>
 		<option value="Rio de Janeiro">Rio de Janeiro</option>
 		
 	</select>
@@ -53,6 +95,15 @@ DATA: 24/03/2023
 
 		<input type="submit" value="Cadastrar">
 	</form>
-</div>
 </body>
+    <h3>Imagem de Anápolis</h3> <!---tag HTML que cria um cabeçalho de terceiro nível (h3) -->
+    <img src="anapolis.jpg" alt="Anápolis">
+    <h3>Imagem de Anápolis</h3> <!---tag HTML que cria um cabeçalho de terceiro nível (h3) -->
+    <img src="goiania.jpg" alt="Goiânia"><!--código HTML insere uma imagem na página da web usando a tag <img>.
+		O atributo "src" especifica o caminho da imagem, que é "goiania.jpg". O atributo "width" define a largura da imagem em pixels, 
+		que neste caso é 1000 pixels. O atributo "alt" fornece um texto alternativo para a imagem, 
+		que será exibido caso a imagem não possa ser carregada ou caso o usuário utilize um leitor de tela para navegar na página.-->
+</body>  
+</body>
+</div>
 </html>
