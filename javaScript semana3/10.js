@@ -1,6 +1,6 @@
 // Curso de Engenharia de Software - UniEVANGÉLICA
 // Disciplina de Programação Web
-// Dev: Bruno Paiva Souza
+// Dev: Lucas de carvalho lOPES
 // DATA: 01/04/2023
 function calcularFatorial(n) {
     if (n === 0 || n === 1) { // caso base
