@@ -1,6 +1,6 @@
 // Curso de Engenharia de Software - UniEVANGÉLICA
 // Disciplina de Programação Web
-// Dev: Bruno Paiva Souza
+// Dev: Lucas de carvalho Lopes
 // DATA: 01/04/2023
 function fatorial(num) {
     let resultado = 1; // Inicializa o resultado como 1

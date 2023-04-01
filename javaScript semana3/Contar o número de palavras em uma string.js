@@ -1,6 +1,6 @@
 // Curso de Engenharia de Software - UniEVANGÉLICA
 // Disciplina de Programação Web
-// Dev: Bruno Paiva Souza
+// Dev: Lucas de carvalho Lopes
 // DATA: 01/04/2023
 function contarPalavras(str) {
     const palavras = str.trim().split(" "); // Remove os espaços em branco no início e no final da string e divide a string em um array de palavras

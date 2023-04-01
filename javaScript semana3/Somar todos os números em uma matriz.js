@@ -1,6 +1,6 @@
 // Curso de Engenharia de Software - UniEVANGÉLICA
 // Disciplina de Programação Web
-// Dev: Bruno Paiva Souza
+// Dev: Lucas de carvalho Lopes
 // DATA: 01/04/2023
 function somarMatriz(matriz) {
     let soma = 0;//Essa linha de código cria uma variável chamada soma e a inicializa com o

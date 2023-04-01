@@ -1,6 +1,6 @@
 // Curso de Engenharia de Software - UniEVANGÉLICA
 // Disciplina de Programação Web
-// Dev: Bruno Paiva Souza
+// Dev:Lucas de carvalho Lopes
 // DATA: 01/04/2023
 function encontrarPalavraMaisLonga(frase) {
     let palavras = frase.split(' '); // separando as palavras da frase em um array

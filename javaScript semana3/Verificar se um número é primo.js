@@ -1,6 +1,6 @@
 // Curso de Engenharia de Software - UniEVANGÉLICA
 // Disciplina de Programação Web
-// Dev: Bruno Paiva Souza
+// Dev: Lucas de carvalho Lopes
 // DATA: 01/04/2023
 function verificarPrimo(num) {
     if (num < 2) { // Verifica se o número é menor que 2, pois os números primos são maiores ou iguais a 2

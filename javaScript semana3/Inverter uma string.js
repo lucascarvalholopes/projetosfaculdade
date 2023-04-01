@@ -1,6 +1,6 @@
 // Curso de Engenharia de Software - UniEVANGÉLICA
 // Disciplina de Programação Web
-// Dev: Bruno Paiva Souza
+// Dev: Lucas de carvalho Lopes
 // DATA: 01/04/2023
 function inverterString(str) {
     let strInvertida = ""; // Cria uma variável vazia para armazenar a string invertida
