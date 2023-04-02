@@ -1,0 +1,93 @@
+<!-- 
+Curso de Engenharia de Software - UniEVANGÉLICA
+Disciplina de Programação Web
+Dev: Lucas de carvalho Lopes
+DATA: 01/04/2023
+ -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Consulta de Consultas</title><!--definir o título que aparecerá na aba ou janela do navegador-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"><!--código adiciona um link para um arquivo CSS que 
+    contém o framework Bootstrap na versão 4.5.2. -->
+</head>
+<body>
+    <!--código é responsável por criar uma barra de navegação no topo da página, usando a classe "navbar" 
+        do Bootstrap. A barra de navegação tem um fundo azul escuro (bg-primary) 
+        e contém um logotipo da UniSoft e uma lista de links para outras páginas do site-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">UniSoft</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="cadastro de paciente.html">Cadastro Paciente<span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="agendamento de consulta.html">Agendamento de consulta<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Consultas.html">Consultas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="consultas marcadas.html">Consultas marcadas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="medicamentos.html">Medicamentos</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+  <header>
+    <h1>Consulta de Consultas</h1><!-- código está criando um título para a página, utilizando a tag HTML <h1>.-->
+  </header>
+  
+  <main>
+    <form>
+      <label for="input-nome">Buscar por nome ou CPF:</label>
+      <input type="text" id="input-nome" name="nome">
+      <button type="submit">Buscar</button>
+    </form>
+    
+    <table>
+      <thead>
+        <tr>
+          <th>Paciente</th>
+          <th>Médico</th>
+          <th>Data</th>
+          <th>Hora</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Maria Silva</td>
+          <td>Dr. João Souza</td>
+          <td>01/05/2023</td>
+          <td>10:00</td>
+        </tr>
+        <tr>
+          <td>Lucas Santos</td>
+          <td>Dra. Ana Costa</td>
+          <td>02/05/2023</td>
+          <td>14:30</td>
+        </tr>
+        <tr>
+          <td>Carlos Oliveira</td>
+          <td>Dr. Pedro Rocha</td>
+          <td>05/05/2023</td>
+          <td>08:00</td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+  
+  <footer>
+    <p>&copy; 2023 - Todos os direitos reservados</p>
+  </footer>
+</body>
+</html>
