@@ -1,0 +1,27 @@
+.game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+  }
+  
+  .board-row {
+    display: flex;
+  }
+  
+  .square {
+    width: 60px;
+    height: 60px;
+    margin: 4px;
+    font-size: 48px;
+    font-weight: bold;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  
+  .status {
+    margin-top: 10px;
+    font-size: 24px;
+  }
+  
