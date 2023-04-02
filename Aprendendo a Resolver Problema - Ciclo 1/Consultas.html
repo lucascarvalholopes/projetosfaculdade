@@ -48,7 +48,16 @@ DATA: 01/04/2023
 		<h1>Consulta de Pacientes</h1><!-- código está criando um título para a página, utilizando a tag HTML <h1>.-->
 	</header>
 
-	<main>
+	<main><!--é usado para representar o conteúdo principal de um documento HTML. Geralmente 
+		é usado para o conteúdo que está diretamente relacionado ao objetivo principal da página, 
+		como o conteúdo principal de um artigo, uma seção ou o conteúdo central de uma página. É uma boa prática incluir todo o conteúdo que não é cabeçalho, rodapé ou barra lateral dentro do elemento "main" 
+		para ajudar a melhorar a acessibilidade e a estrutura do documento.-->
+		<!--Este trecho de código HTML representa um formulário com um campo de busca e um botão 
+			para enviar o formulário. O formulário é submetido usando o método HTTP POST. 
+			O campo de busca é um campo de texto identificado pelo atributo id "busca" e um atributo name "busca". O rótulo do campo de busca é "Buscar
+			 por nome ou CPF:". Quando o usuário preencher 
+			o campo de busca e clicar no botão "Buscar", o formulário 
+			será enviado para a URL especificada no atributo action (que está vazio neste caso).-->
 		<form action="" method="post">
 			<label for="busca">Buscar por nome ou CPF:</label>
 			<input type="text" id="busca" name="busca">

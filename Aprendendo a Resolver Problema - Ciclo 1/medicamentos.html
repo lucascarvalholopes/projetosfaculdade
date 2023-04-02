@@ -87,8 +87,15 @@ DATA: 01/04/2023
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!--Este trecho de código é uma função que será executada quando o documento estiver pronto. A função começa declarando uma variável "counter" com valor 1.
+Em seguida, a função liga um evento de clique no botão de envio do formulário com ID 
+"add-medicamento-form". Quando este botão é clicado, a função verifica se os campos 
+"nome-medicamento" e "quantidade-medicamento" não estão vazios. Se ambos tiverem valores,
+ a função cria uma nova linha (um <li>) na lista de medicamentos com o nome e quantidade 
+    do medicamento fornecidos, além de um botão para remoção da linha. A nova linha é adicionada à lista de medicamentos (com ID "medicamentos-list") e os campos 
+    "nome-medicamento" e "quantidade-medicamento" são limpos. O contador é incrementado.-->
     <script>
-        $(document).ready(function () {
+        $(document).ready(function () { 
             var counter = 1;
 
             $("#add-medicamento-form button[type='submit']").click(function (event) {
@@ -113,7 +120,6 @@ DATA: 01/04/2023
                 counter -= 1;
             });
         });
-
     </script>
 
 </body>
