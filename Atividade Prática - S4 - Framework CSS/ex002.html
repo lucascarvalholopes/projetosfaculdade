@@ -6,14 +6,18 @@ DATA: 31/03/2023
  -->
 <!-- declaração do tipo de documento -->
 <html><!-- início do documento HTML -->
-<head>
-	<title>Cidades: Descobrindo o melhor de cada lugar </title><!-- título da página exibido na aba do navegador -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="/semana 2 parte CSS/style.css">
-</head>
+	<head>
+		<title>Cidades: Descobrindo o melhor de cada lugar </title>
+		<!-- inclusão da biblioteca Bootstrap -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	</head>
+	<!-- título da página exibido na aba do navegador -->
 <body><!-- corpo do documento -->
-	<H1>Cidade do Evento e Pontos Turístico</H1><!--cria um cabeçalho de nível 1 para uma página da web, onde "Cidade do Evento e Pontos Turísticos" é o texto do cabeçalho.-->
-	<label for="Cidade">Cidade:</label><!--cria uma etiqueta ou rótulo (label) associado a um elemento de entrada de dados em um formulário HTML.-->
+	<body>
+		<div class="container">
+			<h1>Cidade do Evento e Pontos Turísticos</h1><!--cria um cabeçalho de nível 1 para uma página da web, onde "Cidade do Evento e Pontos Turísticos" é o texto do cabeçalho.-->
+			<label for="Cidade">Cidade:</label><!--cria uma etiqueta ou rótulo (label) associado a um elemento de entrada de dados em um formulário HTML.-->
+			<input type="submit" value="Cadastrar">
 	<select id="estado" name="estado"><!--cria um elemento de seleção (dropdown) em um formulário HTML.-->
 		<!--O código apresentado é um exemplo de como criar uma lista suspensa (dropdown) em uma página HTML. 
 			Cada linha contém uma tag "<option>" que representa uma opção dentro da lista suspensa.-->
@@ -49,8 +53,14 @@ DATA: 31/03/2023
 
 		<label for="descricao-ponto">Descrição do Ponto Turístico:</label><br>
 		<textarea id="descricao-ponto" name="descricao-ponto"></textarea><br><!-- apresenta um rótulo (label) para um campo de entrada de texto (input). O atributo "for" no elemento label está vinculado ao ID do elemento input usando o mesmo valor no atributo "id". Isso permite que o usuário clique no rótulo para focar automaticamente no campo de entrada associado.-->
-
-		<input type="submit" value="Cadastrar">
 	</form>
 </body>
 </html>
+
+			<form>
+				<!-- restante do código HTML aqui -->
+				<button type="submit" class="btn btn-primary">Cadastrar</button>
+			</form>
+		</div>
+	</body>
+	

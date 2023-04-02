@@ -1,0 +1,106 @@
+<!-- 
+Curso de Engenharia de Software - UniEVANGÉLICA
+Disciplina de Programação Web
+Dev: Lucas de carvalho Lopes
+DATA: 31/03/2023
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Cidades</title>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"><!--Esse código é um link para uma folha de estilo (CSS) 
+         hospedada no site do Bootstrap, uma popular biblioteca de componentes de interface do usuário.-->
+ </head>
+ <body>
+     <nav class="navbar navbar-expand-lg navbar-toggler-">
+         <a class="navbar-brand" href="#">home</a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarNav">
+             <ul class="navbar-nav">
+                 <li class="nav-item active">
+                     <a class="nav-link" href="ex001.html">link</a>
+                 </li>
+                 <li class="nav-item">
+                     <a class="nav-link" href="ex002.html">Formulario</a>
+                 </li>
+                 <li class="nav-item">
+                     <a class="nav-link" href="ex003.html">Tabelas</a>
+                 </li>
+                 <li class="nav-item">
+                     <a class="nav-link" href="ex004.html">Imagem</a>
+                 </li>
+             </ul>
+         </div>
+     </nav>
+     <h3>Tabela Estados</h3> <!---tag HTML que cria um cabeçalho de terceiro nível (h3) -->
+     <table border='1'>
+         <thead>
+           <tr>
+             <th>Estados</th>
+             <th>Ponto Turístico</th>
+           </tr>
+         </thead>
+         <tbody>
+           <tr>
+             <td>Acre</td>
+             <td>Parque Nacional da serra Do Divisor</td>
+           </tr>
+           <td>Alagoas</td>
+             <td>Praia do Francês</td>
+         </tr>	
+         </table>
+     <H1>Cidade do Evento e Pontos Turístico</H1><!--cria um cabeçalho de nível 1 para uma página da web, onde "Cidade do Evento e Pontos Turísticos" é o texto do cabeçalho.-->
+     <label for="Cidade">Cidade:</label><!--cria uma etiqueta ou rótulo (label) associado a um elemento de entrada de dados em um formulário HTML.-->
+     <select id="estado" name="estado"><!--cria um elemento de seleção (dropdown) em um formulário HTML.-->
+         
+         <option value="Acre">Acre</option>
+         <option value="Alagoas">Alagoas</option>
+         <option value="Distrito Federal">Distrito Federal</option>
+         <option value="Rio de Janeiro">Rio de Janeiro</option>
+         
+     </select>
+     <h2>Cadastro de Evento</h2><!--é uma tag de cabeçalho nível 2 (<h2>) que cria um título "Cadastro de Evento" na página web.-->
+     <form>
+         <label for="nome-evento">Nome do Evento:</label><br>
+         <input type="text" id="nome-evento" name="nome-evento"><br><!--apresenta um rótulo (label) para um campo de entrada de texto (input). O atributo "for" no elemento label está vinculado ao ID do elemento input usando o mesmo valor no atributo "id". Isso permite que o usuário clique no rótulo para focar automaticamente no campo de entrada associado.-->
+ 
+         <label for="data-evento">Data do Evento:</label><br>
+         <input type="date" id="data-evento" name="data-evento"><br><!--apresenta um rótulo (label) para um campo de entrada de texto (input). O atributo "for" no elemento label está vinculado ao ID do elemento input usando o mesmo valor no atributo "id". Isso permite que o usuário clique no rótulo para focar automaticamente no campo de entrada associado.-->
+ 
+         <label for="local-evento">Local do Evento:</label><br>
+         <input type="text" id="local-evento" name="local-evento"><br><!--apresenta um rótulo (label) para um campo de entrada de texto (input). O atributo "for" no elemento label está vinculado ao ID do elemento input usando o mesmo valor no atributo "id". Isso permite que o usuário clique no rótulo para focar automaticamente no campo de entrada associado.-->
+ 
+         <label for="descricao-evento">Descrição do Evento:</label><br>
+         <textarea id="descricao-evento" name="descricao-evento"></textarea><br><!--apresenta um rótulo (label) para um campo de entrada de texto (input). O atributo "for" no elemento label está vinculado ao ID do elemento input usando o mesmo valor no atributo "id". Isso permite que o usuário clique no rótulo para focar automaticamente no campo de entrada associado-->
+ 
+         <input type="submit" value="Cadastrar"><!-- apresenta um botão de envio (submit) para um formulário. O atributo "type" define o tipo de input como "submit", o que significa que o botão irá enviar o formulário quando clicado. O atributo "value" define o texto que será exibido no botão, que neste caso é "Cadastrar". Quando o usuário clica no botão, os dados do formulário serão submetidos para a URL especificada no atributo "action" do elemento <form> mais próximo.-->
+     </form>
+     <h2>Cadastro de Ponto Turístico</h2><!--apresenta um elemento de cabeçalho de nível 2 (h2) com o texto "Cadastro de Ponto Turístico". O elemento de cabeçalho é usado para definir um título ou sub-título em uma página web.-->
+     <form>
+         <label for="nome-ponto">Nome do Ponto Turístico:</label><br>
+         <input type="text" id="nome-ponto" name="nome-ponto"><br><!-- apresenta um rótulo (label) para um campo de entrada de texto (input). O atributo "for" no elemento label está vinculado ao ID do elemento input usando o mesmo valor no atributo "id". Isso permite que o usuário clique no rótulo para focar automaticamente no campo de entrada associado.-->
+ 
+         <label for="endereco-ponto">Endereço do Ponto Turístico:</label><br>
+         <input type="text" id="endereco-ponto" name="endereco-ponto"><br><!-- apresenta um rótulo (label) para um campo de entrada de texto (input). O atributo "for" no elemento label está vinculado ao ID do elemento input usando o mesmo valor no atributo "id". Isso permite que o usuário clique no rótulo para focar automaticamente no campo de entrada associado.-->
+ 
+         <label for="descricao-ponto">Descrição do Ponto Turístico:</label><br>
+         <textarea id="descricao-ponto" name="descricao-ponto"></textarea><br><!-- apresenta um rótulo (label) para um campo de entrada de texto (input). O atributo "for" no elemento label está vinculado ao ID do elemento input usando o mesmo valor no atributo "id". Isso permite que o usuário clique no rótulo para focar automaticamente no campo de entrada associado.-->
+ 
+         <input type="submit" value="Cadastrar">
+     </form>
+ </body>
+     <h3>Imagem de Anápolis</h3> <!---tag HTML que cria um cabeçalho de terceiro nível (h3) -->
+     <img src="anapolis.jpg" alt="Anápolis">
+     <h3>Imagem de Goiânia</h3>  <!---tag HTML que cria um cabeçalho de terceiro nível (h3) -->
+     <img src="goiania.jpg" width="1000px" alt="Goiânia"> <!--código HTML insere uma imagem na página da web usando a tag <img>.
+         O atributo "src" especifica o caminho da imagem, que é "goiania.jpg". O atributo "width" define a largura da imagem em pixels, 
+         que neste caso é 1000 pixels. O atributo "alt" fornece um texto alternativo para a imagem, 
+         que será exibido caso a imagem não possa ser carregada ou caso o usuário utilize um leitor de tela para navegar na página.-->
+ </body>  
+ </body>
+ </html>

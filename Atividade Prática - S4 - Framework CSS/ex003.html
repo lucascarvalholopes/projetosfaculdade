@@ -1,126 +1,160 @@
-<!--Curso de Engenharia de Software - UniEVANGÉLICA 
-Disciplina de Programação Web 
-Dev: Lucas de Carvalho Lopes 
-DATA:31/03/2023-->
+<!-- 
+Curso de Engenharia de Software - UniEVANGÉLICA
+Disciplina de Programação Web
+Dev: Lucas de carvalho Lopes
+DATA: 02/04/2023
+ -->
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Tabela Cidades</title>
-    <link rel="stylesheet" href="https://getbootstrap.com.br/docs/4.1/content/tables/">
+    <title>Tabela Cidades</title><!-- <title>Tabela Cidades</title> -->
+    <!--responsável por adicionar a folha de estilo Bootstrap ao documento HTML.-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+      /* Aqui vão as regras CSS */
+      body {
+        font-family: Arial, sans-serif;
+      }
+      
+      h1 {
+        color: #333;
+      }
+      
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      
+      th, td {
+        padding: 10px;
+        text-align: left;
+        border: 1px solid #ddd;
+      }
+      
+      th {
+        background-color: #f2f2f2;
+      }
+      
+      tr:hover {
+        background-color: #f5f5f5;
+      }
+    </style>
   </head>
   <body>
-    <table class="table table-dark">
-    <table border='1' class="tabela1"> <!--Define uma tabela HTML-->
-      <thead> <!--Define uma seção de cabeçalho da tabela-->
-        <tr> <!--Define uma linha da tabela-->
-         <h1>Tabela Estados</h1> 
-          <th>Estado</th> <!--Define uma célula de cabeçalho da tabela-->
+    <!-- Aqui vai o conteúdo do documento HTML -->
+    <h1>Tabela Estados</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Estado</th>
           <th>Capital</th>
           <th>População</th>
         </tr>
       </thead>
-      <tbody> <!--Define uma seção de corpo da tabela-->
+      <tbody>
         <tr>
-          <td>Acre</td> <!--Define uma célula da tabela-->
+          <td>Acre</td>
           <td>Rio Branco</td>
           <td>894,470</td>
         </tr>
         <tr>
-          <td>Alagoas</td>
-          <td>Maceió</td>
-          <td>3,337,357</td>
-        </tr>
-        <tr>
-          <td>Bahia</td>
-          <td>Salvador</td>
-          <td>14,930,634</td>
-        </tr>
-        <tr>
-          <td>Distrito Federal</td>
-          <td>Brasília</td>
-          <td>3,015,268</td>
-        </tr>
-        <tr>
-          <td>Rio de Janeiro</td>
-          <td>Rio de janeiro</td>
-          <td>6,7486,748 milhões</td>
-        </tr>
-        <tr>
+            <td>Alagoas</td>
+            <td>Maceió</td>
+            <td>3,337,357</td>
+          </tr>
+          <tr>
+            <td>Bahia</td>
+            <td>Salvador</td>
+            <td>14,930,634</td>
+          </tr>
+          <tr>
+            <td>Distrito Federal</td>
+            <td>Brasília</td>
+            <td>3,015,268</td>
+          </tr>
+          <tr>
+            <td>Rio de Janeiro</td>
+            <td>Rio de janeiro</td>
+            <td>6,7486,748 milhões</td>
+          </tr>
+          <tr>
+        </tbody>
+        <tfoot> <!--Define uma seção de rodapé da tabela-->
+          <tr>
+          </tr>
+        </tfoot>
+      </table>
+      <table border='2'> <!--Define uma tabela HTML-->
+        <thead> <!--Define uma seção de cabeçalho da tabela-->
+          <tr> <!--Define uma linha da tabela-->
+            <h1>Tabela Bairros </h1>
+            <th>Cep</th> <!--Define uma célula de cabeçalho da tabela-->
+            <th>Logradouro</th>
+            <th>Bairro</th>
+          </tr>
+        </thead>
+        <tbody> <!--Define uma seção de corpo da tabela-->
+          <tr>
+            <td>69918-046</td> <!--Define uma célula da tabela-->
+            <td>Rua carmópolis</td>
+            <td>Abraão Alab</td>
+          </tr>
+          <tr>
+            <td>57084-800</td>
+            <td>Avenida Benedito Bentes </td>
+            <td>Benedito Bentes</td>
+          </tr>
+          <tr>
+            <td> 40215-060</td>
+            <td>Rua Alto das Pombas</td>
+            <td>Alto das Pombas</td>
+          </tr>
+          <tr>
+            <td>72430-220</td>
+            <td> Área Especia 2</td>
+            <td>Gama</td>
+          </tr>
+          <tr>
+            <td>20241-420</td>
+            <td>Beco da Lagoinha</td>
+            <td>Santa Teresa</td>-
+          </tr>
+        </tbody>
+        <tfoot> <!--Define uma seção de rodapé da tabela-->
+          <tr>
+          </tr>
+        </tfoot>
+      </table>
+      <table border='3'> <!--Define uma tabela HTML-->
+        <thead> <!--Define uma seção de cabeçalho da tabela-->
+          <tr> <!--Define uma linha da tabela-->         
+            <h1>Tabela Ponto Turísticos </h1>
+            <th>Estados</th> <!--Define uma célula de cabeçalho da tabela-->
+            <th>Ponto Turísticos</th>
+          </tr>
+        </thead>
+        <tbody> <!--Define uma seção de corpo da tabela-->
+          <tr>
+            <td>Acre</td> <!--Define uma célula da tabela-->
+            <td>Parque Nacional da Serra do Divisor</td>
+          </tr>
+          <tr>
+            <td>Alagoas</td>
+            <td>Praia do Francês</td>
+          </tr>
+          <tr>
+            <td>Bahia</td>
+            <td>Pelourinho</td>
+          </tr>
+          <tr>
+            <td>Distrito Federal</td>
+            <td>Museu Nacional da República</td>
+          </tr>
+          <tr>
+            <td>Rio de Janeiro</td>
+            <td>Cristo Redentor</td>
+          </tr>
       </tbody>
-      <tfoot> <!--Define uma seção de rodapé da tabela-->
-        <tr>
-        </tr>
-      </tfoot>
     </table>
-    <table border='2'> <!--Define uma tabela HTML-->
-      <thead> <!--Define uma seção de cabeçalho da tabela-->
-        <tr> <!--Define uma linha da tabela-->
-          <h1>Tabela Bairros </h1>
-          <th>Cep</th> <!--Define uma célula de cabeçalho da tabela-->
-          <th>Logradouro</th>
-          <th>Bairro</th>
-        </tr>
-      </thead>
-      <tbody> <!--Define uma seção de corpo da tabela-->
-        <tr>
-          <td>69918-046</td> <!--Define uma célula da tabela-->
-          <td>Rua carmópolis</td>
-          <td>Abraão Alab</td>
-        </tr>
-        <tr>
-          <td>57084-800</td>
-          <td>Avenida Benedito Bentes </td>
-          <td>Benedito Bentes</td>
-        </tr>
-        <tr>
-          <td> 40215-060</td>
-          <td>Rua Alto das Pombas</td>
-          <td>Alto das Pombas</td>
-        </tr>
-        <tr>
-          <td>72430-220</td>
-          <td> Área Especia 2</td>
-          <td>Gama</td>
-        </tr>
-        <tr>
-          <td>20241-420</td>
-          <td>Beco da Lagoinha</td>
-          <td>Santa Teresa</td>-
-        </tr>
-      </tbody>
-      <tfoot> <!--Define uma seção de rodapé da tabela-->
-        <tr>
-        </tr>
-      </tfoot>
-    </table>
-    <table border='3'> <!--Define uma tabela HTML-->
-      <thead> <!--Define uma seção de cabeçalho da tabela-->
-        <tr> <!--Define uma linha da tabela-->         
-          <h1>Tabela Ponto Turísticos </h1>
-          <th>Estados</th> <!--Define uma célula de cabeçalho da tabela-->
-          <th>Ponto Turísticos</th>
-        </tr>
-      </thead>
-      <tbody> <!--Define uma seção de corpo da tabela-->
-        <tr>
-          <td>Acre</td> <!--Define uma célula da tabela-->
-          <td>Parque Nacional da Serra do Divisor</td>
-        </tr>
-        <tr>
-          <td>Alagoas</td>
-          <td>Praia do Francês</td>
-        </tr>
-        <tr>
-          <td>Bahia</td>
-          <td>Pelourinho</td>
-        </tr>
-        <tr>
-          <td>Distrito Federal</td>
-          <td>Museu Nacional da República</td>
-        </tr>
-        <tr>
-          <td>Rio de Janeiro</td>
-          <td>Cristo Redentor</td>
-        </tr>
   </body>
 </html>
