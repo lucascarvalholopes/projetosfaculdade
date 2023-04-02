@@ -5,118 +5,66 @@ DATA:30/03/2023-->
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<!-- A estrutura geral da página é construída usando as tags <html>, <head> e <body>. -->
-
 <head>
-    <!-- A tag <meta> é usada para definir as metainformações da página, como o conjunto de caracteres, a compatibilidade do navegador e a escala inicial de visualização. -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- A tag <title> define o título da página que aparecerá na aba do navegador. -->
     <title>Jogo de Memória de Cidades</title>
-    <!-- A página inclui links para o Bootstrap e o arquivo de estilo personalizado "style.css", que é usado para definir o estilo da página. -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-<!-- O conteúdo principal da página é dividido em duas seções: a seção do cabeçalho e a seção do jogo em si. -->
-<!-- A seção do cabeçalho inclui um título, uma breve descrição, um contador de tempo, uma mensagem e um botão para começar o jogo. -->
-
 <body>
-    <!-- Cada carta é uma <div> que contém uma imagem e uma classe que identifica qual cidade  representa. -->
-    <div class="container">
-        <div class="row">
-            <div class="col-12 text-center">
-                <h1>Memória de Cidades</h1>
-                <p>Encontre todos os pares de cartas antes que o tempo acabe!</p>
-                <p class="timer">Tempo Restante: 60s</p>
-                <p class="message"></p>
-                <button class="start-button btn btn-primary">Começar Jogo</button>
+    <div class="container text-center">
+        <h1>Memória de Cidades</h1>
+        <p>Encontre todos os pares de cartas antes que o tempo acabe!</p>
+        <p class="timer">Tempo Restante: 60s</p>
+        <p class="message"></p>
+        <button class="start-button btn btn-primary">Começar Jogo</button>
+        <div class="card-row">
+            <div class="card col-md-2">
+                <img src="anapolis.jpg" class="card-img-top" alt="anapolis">
             </div>
-        </div>
-        <div class="row card-row">
-            <div class="col-3">
-                <div class="card card-0">
-                    <img src="anapolis.jpg" class="card-img-top" alt="anapolis">
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="card card-1">
-                    <img src="bahia.jpeg" class="card-img-top" alt="bahia">
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="card card-2">
-                    <img src="riodejaneiro.jpg" class="card-img-top" alt="riodejaneiro">
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="card card-3">
-                    <img src="distritofederal.jpeg" class="card-img-top" alt="distritofederal">
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="card card-4">
-                    <img src="acre.jpg" class="card-img-top" alt="acre">
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="card card-5">
-                    <img src="sao paulo.jpg" class="card-img-top" alt="sao paulo">
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="card card-6">
-                    <img  src="anapolis.jpg" class="card-img-top" alt="anapolis">
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="card card-7">
-                    <img src="bh.jpg" class="card-img-top" alt="bh">
-                </div>
-            </div>
-        </div>
-        <div class="col-3">
-            <div class="card card-0">
-                <img src="acre.jpg" class="card-img-top" alt="acre">
-            </div>
-        </div>
-        <div class="col-3">
-            <div class="card card-1">
-                <img src="goiania.jpg" class="card-img-top" alt="goiania">
-            </div>
-        </div>
-        <div class="col-3">
-            <div class="card card-2">
+            <div class="card col-md-2">
                 <img src="bahia.jpeg" class="card-img-top" alt="bahia">
             </div>
-        </div>
-        <div class="col-3">
-            <div class="card card-3">
-                <img src="sao paulo.jpg" class="card-img-top" alt="sao paulo">
-            </div>
-        </div>
-        <div class="col-3">
-            <div class="card card-4">
+            <div class="card col-md-2">
                 <img src="riodejaneiro.jpg" class="card-img-top" alt="riodejaneiro">
             </div>
-        </div>
-        <div class="col-3">
-            <div class="card card-5">
+            <div class="card col-md-2">
+                <img src="distritofederal.jpeg" class="card-img-top" alt="distritofederal">
+            </div>
+            <div class="card col-md-2">
+                <img src="acre.jpg" class="card-img-top" alt="acre">
+            </div>
+            <div class="card col-md-2">
+                <img src="sao paulo.jpg" class="card-img-top" alt="sao paulo">
+            </div>
+            <div class="card col-md-2">
+                <img src="anapolis.jpg" class="card-img-top" alt="anapolis">
+            </div>
+            <div class="card col-md-2">
+                <img src="bh.jpg" class="card-img-top" alt="bh">
+            </div>
+            <div class="card col-md-2">
+                <img src="acre.jpg" class="card-img-top" alt="acre">
+            </div>
+            <div class="card col-md-2">
+                <img src="goiania.jpg" class="card-img-top" alt="goiania">
+            </div>
+            <div class="card col-md-2">
+                <img src="bahia.jpeg" class="card-img-top" alt="bahia">
+            </div>
+            <div class="card col-md-2">
+                <img src="sao paulo.jpg" class="card-img-top" alt="sao paulo">
+            </div>
+            <div class="card col-md-2">
+                <img src="riodejaneiro.jpg" class="card-img-top" alt="riodejaneiro">
+            </div>
+            <div class="card col-md-2">
                 <img src="goiania.jpg" class="card-img-top" alt="Ben 10">
             </div>
         </div>
-        <div class="col-3">
-            <div class="card card-6">
-                <img src="bh.jpg" class="card-img-top" alt="bh">
-            </div>
-        </div>
-        <div class="col-3">
-            <div class="card card-7">
-                <img src="distritofederal.jpeg" class="card-img-top" alt="Garfield">
-            </div>
-        </div>
-    </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -124,4 +72,3 @@ DATA:30/03/2023-->
     <script src="app.js"></script>
 </body>
 
-</html>
