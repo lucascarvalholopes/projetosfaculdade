@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cidades</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container mt-4">
+        <h2>Cidades e Pontos Turísticos</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <form id="add-cidade-form">
+                    <div class="form-group">
+                        <label for="nome-cidade">Nome da Cidade:</label>
+                        <input type="text" class="form-control" id="nome-cidade" name="nome-cidade">
+                    </div>
+                    <div class="form-group">
+                        <label for="nome-ponto-turistico">Nome do Ponto Turístico:</label>
+                        <input type="text" class="form-control" id="nome-ponto-turistico" name="nome-ponto-turistico">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Adicionar</button>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <ul id="cidades-list" class="list-group">
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () { 
+            $("#add-cidade-form").submit(function (event) {
+                event.preventDefault();
+                var newCity = $("#nome-cidade").val().trim();
+                var newPlace = $("#nome-ponto-turistico").val().trim();
+                if (newCity !== '' && newPlace !== '') {
+                    var newRow = $("<li>");
+                    newRow.addClass("list-group-item d-flex justify-content-between align-items-center");
+                    newRow.append(newCity);
+                    newRow.append('<span class="badge badge-primary badge-pill">' + newPlace + '</span>');
+                    newRow.append('<button type="button" class="btn btn-danger btn-sm delete-btn">Remover</button>');
+                    $("#cidades-list").append(newRow);
+                    $("#nome-cidade").val('');
+                    $("#nome-ponto-turistico").val('');
+                }
+            });
+
+            $("#cidades-list").on("click", ".delete-btn", function () {
+                $(this).closest("li").remove();
+            });
+        });
+    </script>
+</body>
+</html>
+
+
