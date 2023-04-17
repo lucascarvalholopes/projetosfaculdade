@@ -4,14 +4,19 @@ Disciplina de Programação Web
 Dev: Lucas de carvalho Lopes
 DATA: 17/04/2023
  -->
-<!DOCTYPE html>
-<html>
-<head>
+ <!DOCTYPE html>
+ <html lang="pt-br">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cidades</title><!--definir o título que aparecerá na aba ou janela do navegador-->
+ </head>
+ <body>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <!--código adiciona um link para um arquivo CSS que 
+      <!--código adiciona um link para um arquivo CSS que 
         contém o framework Bootstrap na versão 4.5.2. -->
         <!-- código adiciona as referências para as bibliotecas jQuery e Bootstrap no documento HTML.-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
@@ -19,9 +24,8 @@ DATA: 17/04/2023
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-     <!---->
     <div class="container mt-4">
-        <h2>Cidades e Pontos Turísticos</h2> <!--título nível (h2)-->
+        <h2>Cidades e Pontos Turísticos</h2><!--título nível (h2)-->
         <div class="row">
             <div class="col-md-6">
                 <form id="add-cidade-form">
@@ -42,7 +46,7 @@ DATA: 17/04/2023
             </div>
         </div>
     </div>
-  <!--é um script JavaScript que lida com um formulário de adição de cidades e pontos turísticos. Quando o formulário é submetido, 
+    <!--é um script JavaScript que lida com um formulário de adição de cidades e pontos turísticos. Quando o formulário é submetido, 
     os valores são verificados e uma nova linha é adicionada a 
     uma lista que exibe a cidade e o ponto turístico adicionados. Também há um botão de exclusão para remover uma linha da lista.-->
     <script>
@@ -56,19 +60,17 @@ DATA: 17/04/2023
                     newRow.addClass("list-group-item d-flex justify-content-between align-items-center");
                     newRow.append(newCity);
                     newRow.append('<span class="badge badge-primary badge-pill">' + newPlace + '</span>');
-                    newRow.append('<button type="button" class="btn btn-danger btn-sm delete-btn">Remover</button>');
+                    newRow.append('<a href="#" class="delete-link">Remover</a>');
                     $("#cidades-list").append(newRow);
                     $("#nome-cidade").val('');
                     $("#nome-ponto-turistico").val('');
                 }
             });
 
-            $("#cidades-list").on("click", ".delete-btn", function () {
+            $("#cidades-list").on("click", ".delete-link", function () {
                 $(this).closest("li").remove();
             });
         });
     </script>
-</body>
-</html>
-
-
+ </body>
+ </html>
