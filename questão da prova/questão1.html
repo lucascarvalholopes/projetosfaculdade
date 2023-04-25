@@ -1,7 +1,15 @@
+<!-- 
+Curso de Engenharia de Software - UniEVANGÉLICA
+Disciplina de Programação Web
+Dev: Lucas de carvalho Lopes
+DATA: 17/04/2023
+ -->
 <!DOCTYPE html>
 <html>
 <head>
 	<title>Formulário de Cadastro de País e Tabela de  Dados de Pessoas</title>
+	<!--apresenta regras CSS para formatar uma página web, incluindo tamanho, margem, borda, cor e fonte para elementos como formulários, 
+		campos de entrada, botões e tabelas, visando criar uma aparência agradável e consistente para o usuário.-->
 	<style>
 		form {
 			width: 500px;
@@ -56,6 +64,9 @@
 <body>
 	<h1>Formulário de Cadastro de País</h1><!--título nível (h1)-->
 	<form>
+		<!--um formulário HTML com três campos: "Nome" (texto obrigatório), "País" (campo de seleção obrigatório com algumas opções de países) e 
+			"Ativo" (caixa de seleção que indica se a pessoa está ativa ou não). 
+			Ao clicar no botão "Enviar", as informações serão submetidas ao servidor para processamento.-->
 		<label for="nome">Nome:</label>
 		<input type="text" id="nome" name="nome" required>
 		<label for="pais">País:</label>
@@ -76,6 +87,8 @@
 	</form>
 	
 	<h1>Tabela de  Dados de Pessoas</h1><!--título nível (h1)-->
+	<!-- apresentada contém informações de três pessoas, organizadas em colunas "Nome" e "Idade". As informações 
+	estão apresentadas em três linhas e são comuns em relatórios e documentos para organizar dados de forma clara e fácil de ler.-->
 	<table>
 		<thead>
 			<tr>
