@@ -1,3 +1,8 @@
+//Curso de Engenharia de Software - UniEVANGÉLICA
+//Disciplina de Programação Web
+//Dev: Lucas de carvalho Lopes
+//DATA: 20/05/2023
+ 
 const { agenda } = require('../models');
 
 class AgendaController {

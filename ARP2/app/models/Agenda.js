@@ -1,3 +1,7 @@
+//Curso de Engenharia de Software - UniEVANGÉLICA
+//Disciplina de Programação Web
+//Dev: Lucas de carvalho Lopes
+//DATA: 20/05/2023
 const { Sequelize, DataTypes } = require('sequelize');
 const sequelize = require('../database'); // Corrigir o caminho do arquivo database
 
