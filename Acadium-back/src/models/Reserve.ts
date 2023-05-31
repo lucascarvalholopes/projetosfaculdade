@@ -1,10 +1,6 @@
 import mongoose, { Types } from "mongoose";
 
 const ReserveSchema = new mongoose.Schema({
-    id: {
-        require: true,
-        type: String,
-    },
     id_user: {
         require: true,
         type: Types.ObjectId,
